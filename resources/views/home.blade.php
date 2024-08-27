@@ -15,25 +15,14 @@
                                     <h5
                                         class="text-light text-uppercase mb-3 animated slideInDown"
                                     >
-                                        ER Proserv
+                                        Seja bem vindo a ER ProServ
                                     </h5>
-                                    <h1 class="display-2 text-light mb-3 animated slideInDown">
-                                        A Construction & Renovation Company
+                                    <h1 class="text-light mb-3 animated slideInDown">
+                                        Uma Empresa com foco em Facilities<br>
+                                        Prestação de Serviço com Tecnologia e Sustentabilidade<br>
+                                        Manutenção Elétrica, Hidráulica, Refrigeração, Serviço geral.<br>
+
                                     </h1>
-                                    <ol class="breadcrumb mb-4 pb-2">
-                                        <li class="breadcrumb-item fs-5 text-light">
-                                            Commercial
-                                        </li>
-                                        <li class="breadcrumb-item fs-5 text-light">
-                                            Residential
-                                        </li>
-                                        <li class="breadcrumb-item fs-5 text-light">
-                                            Industrial
-                                        </li>
-                                    </ol>
-                                    <!-- <a href="" class="btn btn-primary py-3 px-5"
-                                    >More Details</a
-                                    > -->
                                 </div>
                             </div>
                         </div>
@@ -53,17 +42,6 @@
                                     <h1 class="display-2 text-light mb-3 animated slideInDown">
                                         Professional Tiling & Painting Services
                                     </h1>
-                                    <ol class="breadcrumb mb-4 pb-2">
-                                        <li class="breadcrumb-item fs-5 text-light">
-                                            Commercial
-                                        </li>
-                                        <li class="breadcrumb-item fs-5 text-light">
-                                            Residential
-                                        </li>
-                                        <li class="breadcrumb-item fs-5 text-light">
-                                            Industrial
-                                        </li>
-                                    </ol>
                                 </div>
                             </div>
                         </div>
@@ -83,18 +61,6 @@
                                     <h1 class="display-2 text-light mb-3 animated slideInDown">
                                         Professional Tiling & Painting Services
                                     </h1>
-                                    <ol class="breadcrumb mb-4 pb-2">
-                                        <li class="breadcrumb-item fs-5 text-light">
-                                            Commercial
-                                        </li>
-                                        <li class="breadcrumb-item fs-5 text-light">
-                                            Residential
-                                        </li>
-                                        <li class="breadcrumb-item fs-5 text-light">
-                                            Industrial
-                                        </li>
-                                    </ol>
-
                                 </div>
                             </div>
                         </div>
@@ -114,18 +80,6 @@
                                     <h1 class="display-2 text-light mb-3 animated slideInDown">
                                         Professional Tiling & Painting Services
                                     </h1>
-                                    <ol class="breadcrumb mb-4 pb-2">
-                                        <li class="breadcrumb-item fs-5 text-light">
-                                            Commercial
-                                        </li>
-                                        <li class="breadcrumb-item fs-5 text-light">
-                                            Residential
-                                        </li>
-                                        <li class="breadcrumb-item fs-5 text-light">
-                                            Industrial
-                                        </li>
-                                    </ol>
-
                                 </div>
                             </div>
                         </div>
@@ -153,153 +107,6 @@
         </div>
     </div>
     <!-- Carousel End -->
-
-    <!-- About Start -->
-    <div class="container-xxl py-5">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
-                    <div
-                        class="position-relative overflow-hidden ps-5 pt-5 h-100"
-                        style="min-height: 400px"
-                    >
-                        <img
-                            class="position-absolute w-100 h-100"
-                            src="{{ asset('frontend/img/about.jpg') }}"
-                            alt=""
-                            style="object-fit: cover"
-                        />
-                        <div
-                            class="position-absolute top-0 start-0 bg-white pe-3 pb-3"
-                            style="width: 200px; height: 200px"
-                        >
-                            <div
-                                class="d-flex flex-column justify-content-center text-center bg-primary h-100 p-3"
-                            >
-                                <h1 class="text-white">25</h1>
-                                <h2 class="text-white">Years</h2>
-                                <h5 class="text-white mb-0">Experience</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.5s">
-                    <div class="h-100">
-                        <div class="border-start border-5 border-primary ps-4 mb-5">
-                            <h6 class="text-body text-uppercase mb-2">About Us</h6>
-                            <h1 class="display-6 mb-0">
-                                Unique Solutions For Residentials & Industries!
-                            </h1>
-                        </div>
-                        <p>
-                            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                            Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                            sed stet lorem sit clita duo justo magna dolore erat amet
-                        </p>
-                        <p class="mb-4">
-                            Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit.
-                            Aliqu diam amet diam et eos. Clita erat ipsum et lorem et sit,
-                            sed stet lorem sit clita duo justo magna dolore erat amet
-                        </p>
-                        <div class="border-top mt-4 pt-4">
-                            <div class="row g-4">
-                                <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.1s">
-                                    <i
-                                        class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"
-                                    ></i>
-                                    <h6 class="mb-0">Ontime at services</h6>
-                                </div>
-                                <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.3s">
-                                    <i
-                                        class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"
-                                    ></i>
-                                    <h6 class="mb-0">24/7 hours services</h6>
-                                </div>
-                                <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.5s">
-                                    <i
-                                        class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"
-                                    ></i>
-                                    <h6 class="mb-0">Verified professionals</h6>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- About End -->
-
-    <!-- Facts Start -->
-    <div class="container-fluid my-5 p-0">
-        <div class="row g-0">
-            <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.1s">
-                <div class="position-relative">
-                    <img class="img-fluid w-100" src="{{ asset('frontend/img/fact-1.jpg') }}" alt=""/>
-                    <div class="facts-overlay">
-                        <h1 class="display-1">01</h1>
-                        <h4 class="text-white mb-3">Construction</h4>
-                        <p class="text-white">
-                            Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
-                            clita duo justo erat amet
-                        </p>
-                        <a class="text-white small" href=""
-                        >READ MORE<i class="fa fa-arrow-right ms-3"></i
-                            ></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
-                <div class="position-relative">
-                    <img class="img-fluid w-100" src="{{ asset('frontend/img/fact-2.jpg') }}" alt=""/>
-                    <div class="facts-overlay">
-                        <h1 class="display-1">02</h1>
-                        <h4 class="text-white mb-3">Mechanical</h4>
-                        <p class="text-white">
-                            Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
-                            clita duo justo erat amet
-                        </p>
-                        <a class="text-white small" href=""
-                        >READ MORE<i class="fa fa-arrow-right ms-3"></i
-                            ></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.5s">
-                <div class="position-relative">
-                    <img class="img-fluid w-100" src="{{ asset('frontend/img/fact-3.jpg') }}" alt=""/>
-                    <div class="facts-overlay">
-                        <h1 class="display-1">03</h1>
-                        <h4 class="text-white mb-3">Architecture</h4>
-                        <p class="text-white">
-                            Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
-                            clita duo justo erat amet
-                        </p>
-                        <a class="text-white small" href=""
-                        >READ MORE<i class="fa fa-arrow-right ms-3"></i
-                            ></a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.7s">
-                <div class="position-relative">
-                    <img class="img-fluid w-100" src="{{ asset('frontend/img/fact-4.jpg') }}" alt=""/>
-                    <div class="facts-overlay">
-                        <h1 class="display-1">04</h1>
-                        <h4 class="text-white mb-3">Interior Design</h4>
-                        <p class="text-white">
-                            Aliqu diam amet diam et eos erat ipsum lorem stet lorem sit
-                            clita duo justo erat amet
-                        </p>
-                        <a class="text-white small" href=""
-                        >READ MORE<i class="fa fa-arrow-right ms-3"></i
-                            ></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Facts End -->
 
     <!-- Features Start -->
     <div class="container-xxl py-5">
@@ -394,6 +201,62 @@
     </div>
     <!-- Features End -->
 
+    <!-- Facts Start -->
+    <div class="container-fluid my-5 p-0">
+        <div class="row g-0">
+            <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.1s">
+                <div class="position-relative">
+                    <img class="img-fluid w-100" src="{{ asset('frontend/img/fact-1.jpg') }}" alt=""/>
+                    <div class="facts-overlay">
+                        <h1 class="display-1">01</h1>
+                        <h4 class="text-white mb-3">Profissionais Experientes</h4>
+                        <p class="text-white">
+                            Nossa equipe é composta por especialistas com vasta experiência no setor, garantindo serviços de alta qualidade e soluções eficazes para qualquer desafio de manutenção.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.3s">
+                <div class="position-relative">
+                    <img class="img-fluid w-100" src="{{ asset('frontend/img/fact-2.jpg') }}" alt=""/>
+                    <div class="facts-overlay">
+                        <h1 class="display-1">02</h1>
+                        <h4 class="text-white mb-3">Tecnologia de Ponta</h4>
+                        <p class="text-white">
+                            Utilizamos as mais recentes tecnologias para otimizar nossos processos, proporcionando resultados superiores com menor custo.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.5s">
+                <div class="position-relative">
+                    <img class="img-fluid w-100" src="{{ asset('frontend/img/fact-3.jpg') }}" alt=""/>
+                    <div class="facts-overlay">
+                        <h1 class="display-1">03</h1>
+                        <h4 class="text-white mb-3">Eficiência e Economia</h4>
+                        <p class="text-white">
+                            Acreditamos que a excelência não precisa ser cara. Nossos métodos inovadores e eficientes garantem que você obtenha o melhor valor pelo seu investimento.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-sm-6 wow fadeIn" data-wow-delay="0.7s">
+                <div class="position-relative">
+                    <img class="img-fluid w-100" src="{{ asset('frontend/img/fact-4.jpg') }}" alt=""/>
+                    <div class="facts-overlay">
+                        <h1 class="display-1">04</h1>
+                        <h4 class="text-white mb-3">Software de Gestão</h4>
+                        <p class="text-white">
+                            Equipe especializada em desenvolvimento de softwares em gestão, para facilitar o trabalho dos gestores.
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Facts End -->
+
     <!-- Service Start -->
     <div class="container-xxl py-5">
         <div class="container">
@@ -405,9 +268,6 @@
                             Construction And Renovation Solutions
                         </h1>
                     </div>
-                </div>
-                <div class="col-lg-6 text-lg-end wow fadeInUp" data-wow-delay="0.3s">
-                    <a class="btn btn-primary py-3 px-5" href="">More Services</a>
                 </div>
             </div>
             <div class="row g-4 justify-content-center">
@@ -515,16 +375,15 @@
             <div class="row g-5">
                 <div class="col-lg-5 col-md-6 wow fadeIn" data-wow-delay="0.3s">
                     <div class="border-start border-5 border-primary ps-4 mb-5">
-                        <h6 class="text-white text-uppercase mb-2">Appointment</h6>
+                        <h6 class="text-white text-uppercase mb-2">Trabalhe Conosco</h6>
                         <h1 class="display-6 text-white mb-0">
-                            A Company Involved In Service And Maintenance
+                            Faça parte da equipe!
                         </h1>
                     </div>
                     <p class="text-white mb-0">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-                        lorem sit clita duo justo magna dolore erat amet
-                    </p>
+                        Realize o seu cadastro e entraremos em contato com várias oportunidades de emprego.
+                    </p><br>
+                    <p class="text-white mb-0">Escolha a ER ProServ e saiba que está em boas mãos. </p>
                 </div>
                 <div class="col-lg-7 col-md-6 wow fadeIn" data-wow-delay="0.5s">
                     <form>
@@ -537,7 +396,7 @@
                                         id="gname"
                                         placeholder="Gurdian Name"
                                     />
-                                    <label for="gname">Your Name</label>
+                                    <label for="gname">Nome</label>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -548,7 +407,7 @@
                                         id="gmail"
                                         placeholder="Gurdian Email"
                                     />
-                                    <label for="gmail">Your Email</label>
+                                    <label for="gmail">Email</label>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -559,7 +418,7 @@
                                         id="cname"
                                         placeholder="Child Name"
                                     />
-                                    <label for="cname">Your Mobile</label>
+                                    <label for="cname">Cel./Tel.</label>
                                 </div>
                             </div>
                             <div class="col-sm-6">
@@ -570,7 +429,7 @@
                                         id="cage"
                                         placeholder="Child Age"
                                     />
-                                    <label for="cage">Service Type</label>
+                                    <label for="cage">Tipo Serviço</label>
                                 </div>
                             </div>
                             <div class="col-12">
@@ -581,12 +440,12 @@
                         id="message"
                         style="height: 100px"
                     ></textarea>
-                                    <label for="message">Message</label>
+                                    <label for="message">Descreva suas area de trabalho</label>
                                 </div>
                             </div>
                             <div class="col-12">
                                 <button class="btn btn-primary w-100 py-3" type="submit">
-                                    Get Appointment
+                                   Aplique Agora
                                 </button>
                             </div>
                         </div>
@@ -597,7 +456,7 @@
     </div>
     <!-- Appointment End -->
 
-    <!-- Team Start -->
+    <!-- Team Start
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5 align-items-end mb-5">
@@ -646,9 +505,9 @@
             </div>
         </div>
     </div>
-    <!-- Team End -->
+     Team End -->
 
-    <!-- Testimonial Start -->
+    <!-- Testimonial Start
     <div class="container-xxl py-5">
         <div class="container">
             <div class="row g-5">
@@ -722,7 +581,7 @@
             </div>
         </div>
     </div>
-    <!-- Testimonial End -->
+    Testimonial End -->
 
 
 @endsection
