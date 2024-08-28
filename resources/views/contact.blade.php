@@ -9,7 +9,7 @@
     >
         <div class="container text-center py-5">
             <h1 class="display-4 text-white animated slideInDown mb-4">
-                Contact Us
+                Contato
             </h1>
             <nav aria-label="breadcrumb animated slideInDown">
                 <ol class="breadcrumb justify-content-center mb-0">

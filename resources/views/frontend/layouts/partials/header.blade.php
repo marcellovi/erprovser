@@ -19,11 +19,11 @@
             </div>
             <div class="h-100 d-inline-flex align-items-center border-end px-3">
                 <small class="far fa-envelope-open me-2"></small>
-                <small>info@example.com</small>
+                <small>contato@erproserv.com.br</small>
             </div>
             <div class="h-100 d-inline-flex align-items-center border-end px-3">
                 <small class="far fa-clock me-2"></small>
-                <small>Mon - Fri : 09 AM - 09 PM</small>
+                <small>Seg - Sexta : 09 AM - 18 PM</small>
             </div>
         </div>
         <div class="col-lg-5 px-5 text-end">
