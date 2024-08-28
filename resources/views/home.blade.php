@@ -114,15 +114,13 @@
             <div class="row g-5">
                 <div class="col-lg-6 wow fadeInUp" data-wow-delay="0.1s">
                     <div class="border-start border-5 border-primary ps-4 mb-5">
-                        <h6 class="text-body text-uppercase mb-2">Why Choose Us!</h6>
+                        <h6 class="text-body text-uppercase mb-2">ER ProServ</h6>
                         <h1 class="display-6 mb-0">
-                            Our Specialization And Company Features
+                            Especialização com foco em tecnologia e inovação
                         </h1>
                     </div>
                     <p class="mb-5">
-                        Tempor erat elitr rebum at clita. Diam dolor diam ipsum sit. Aliqu
-                        diam amet diam et eos. Clita erat ipsum et lorem et sit, sed stet
-                        lorem sit clita duo justo magna dolore erat amet
+                        Na ER ProServ, somos mais do que uma empresa de prestação de serviços de manutenção para comércios, Empresas e Industrias. Somos parceiros dedicados ao sucesso e à satisfação dos nossos clientes. Com anos de experiência no mercado, nossa equipe de profissionais altamente qualificados.
                     </p>
                     <div class="row gy-5 gx-4">
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.1s">
@@ -130,10 +128,10 @@
                                 <i
                                     class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"
                                 ></i>
-                                <h6 class="mb-0">Large number of services provided</h6>
+                                <h6 class="mb-0">Gestão de Facilities</h6>
                             </div>
                             <span
-                            >Magna sea eos sit dolor, ipsum amet ipsum lorem diam</span
+                            >Com foco em refrigeração, elétrica, hidráulica, pintura, alvenaria, DryWall, gesso e outros. Manutenções preventiva, corretiva e preditiva;</span
                             >
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.2s">
@@ -141,10 +139,11 @@
                                 <i
                                     class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"
                                 ></i>
-                                <h6 class="mb-0">25+ years of professional experience</h6>
+                                <h6 class="mb-0">Engenharia e Manutenção</h6>
                             </div>
                             <span
-                            >Magna sea eos sit dolor, ipsum amet ipsum lorem diam</span
+                            >Estimativa dos custos de manutenção e avaliação de alternativas;
+Identificação e reporte dos riscos em termos de segurança associados à manutenção. </span
                             >
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.3s">
@@ -152,10 +151,10 @@
                                 <i
                                     class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"
                                 ></i>
-                                <h6 class="mb-0">A large number of grateful customers</h6>
+                                <h6 class="mb-0">Gestão tecnológica</h6>
                             </div>
                             <span
-                            >Magna sea eos sit dolor, ipsum amet ipsum lorem diam</span
+                            >Desenvolvimento e implementação de software com ênfase em gestão, para apoio nas tomadas de decisões e planos de contingencia.</span
                             >
                         </div>
                         <div class="col-sm-6 wow fadeIn" data-wow-delay="0.4s">
@@ -163,10 +162,10 @@
                                 <i
                                     class="fa fa-check fa-2x text-primary flex-shrink-0 me-3"
                                 ></i>
-                                <h6 class="mb-0">Always reliable and affordable prices</h6>
+                                <h6 class="mb-0">Consultoria e Gestão</h6>
                             </div>
                             <span
-                            >Magna sea eos sit dolor, ipsum amet ipsum lorem diam</span
+                            >Voltada para levar a nossos clientes uma gestão de curto, médio e longo prazo. Trazendo soluções inovadoras com parceria, compromisso e sinergia.</span
                             >
                         </div>
                     </div>
