@@ -12,15 +12,13 @@
                         <div class="container">
                             <div class="row justify-content-center">
                                 <div class="col-12 col-lg-10">
-                                    <h5
+                                    <h3
                                         class="text-light text-uppercase mb-3 animated slideInDown"
                                     >
-                                        Seja bem vindo a ER ProServ
-                                    </h5>
-                                    <h1 class="text-light mb-3 animated slideInDown">
-                                        Uma Empresa com foco em Facilities<br>
-                                        Prestação de Serviço com Tecnologia e Sustentabilidade<br>
-                                        Manutenção Elétrica, Hidráulica, Refrigeração, Serviço geral.<br>
+                                        Seja bem vindo a
+                                    </h3>
+                                    <h1 class="display-2 text-light mb-3 animated slideInDown">
+                                        ER ProServ
 
                                     </h1>
                                 </div>
@@ -40,7 +38,7 @@
                                         ER Proserv
                                     </h5>
                                     <h1 class="display-2 text-light mb-3 animated slideInDown">
-                                        Professional Tiling & Painting Services
+                                        Uma Empresa com foco em Facilities
                                     </h1>
                                 </div>
                             </div>
@@ -59,7 +57,7 @@
                                         ER Proserv
                                     </h5>
                                     <h1 class="display-2 text-light mb-3 animated slideInDown">
-                                        Professional Tiling & Painting Services
+                                        Prestação de Serviço com Tecnologia e Sustentabilidade
                                     </h1>
                                 </div>
                             </div>
@@ -78,7 +76,7 @@
                                         ER Proserv
                                     </h5>
                                     <h1 class="display-2 text-light mb-3 animated slideInDown">
-                                        Professional Tiling & Painting Services
+                                        Manutenção Elétrica, Hidráulica, Refrigeração, Serviço geral.
                                     </h1>
                                 </div>
                             </div>
