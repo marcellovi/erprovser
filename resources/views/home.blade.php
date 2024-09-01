@@ -1,7 +1,6 @@
 @extends('frontend.main_master')
 
 @section('content')
-
     <!-- Carousel Start -->
     <div class="container-fluid p-0 mb-5 wow fadeIn" data-wow-delay="0.1s">
         <div id="header-carousel" class="carousel slide" data-bs-ride="carousel">
@@ -187,8 +186,8 @@ Identificação e reporte dos riscos em termos de segurança associados à m
                                 class="d-flex flex-column justify-content-center text-center bg-primary h-100 p-3"
                             >
                                 <h1 class="text-white">25</h1>
-                                <h2 class="text-white">Years</h2>
-                                <h5 class="text-white mb-0">Experience</h5>
+                                <h2 class="text-white">Anos</h2>
+                                <h5 class="text-white mb-0">de Experiência</h5>
                             </div>
                         </div>
                     </div>

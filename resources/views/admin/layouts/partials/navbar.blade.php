@@ -2,7 +2,7 @@
     <div class="position-sticky py-4 px-3 sidebar-sticky">
         <ul class="nav flex-column h-100">
             <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="index.html">
+                <a class="nav-link active" aria-current="page" href="{{ '/' }}">
                     <i class="bi-house-fill me-2"></i>
                     Overview
                 </a>

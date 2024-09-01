@@ -11,8 +11,7 @@
                     <i class="fa fa-building text-primary me-3"></i>ProServ
                 </h1>
                 <p>
-                    Diam dolor diam ipsum sit. Aliqu diam amet diam et eos. Clita erat
-                    ipsum et lorem et sit, sed stet lorem sit clita
+                    {{  $settings['rodape_descricao'] }}
                 </p>
                 <div class="d-flex pt-2">
                     <a class="btn btn-square btn-outline-primary me-1" href=""
@@ -32,33 +31,33 @@
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Endereço</h4>
                 <p>
-                    <i class="fa fa-map-marker-alt me-3"></i>123 Rua Viscente, Rio de Janeiro, RJ
+                    <i class="fa fa-map-marker-alt me-3"></i>{{  $settings['endereco'] }}
                 </p>
-                <p><i class="fa fa-phone-alt me-3"></i>+012 345 67890</p>
-                <p><i class="fa fa-envelope me-3"></i>contato@erproserv.com.br</p>
+                <p><i class="fa fa-phone-alt me-3"></i>{{  $settings['telefone'] }}</p>
+                <p><i class="fa fa-envelope me-3"></i>{{  $settings['email'] }}</p>
             </div>
             <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Quick Links</h4>
-                <a class="btn btn-link" href="">Quem Somos</a>
-                <a class="btn btn-link" href="">Trabalhe Conosco</a>
-                <a class="btn btn-link" href="">Suporte</a>
-                <a class="btn btn-link" href="">Terms & Condition</a>
+                <h4 class="text-light mb-4">Links Rápidos</h4>
+                <a class="btn btn-link" href="{{ '/quemsomos' }}">Quem Somos</a>
+                <a class="btn btn-link" href="{{ '/contato' }}">Trabalhe Conosco</a>
+                <a class="btn btn-link" href="{{ '/contato' }}">Suporte</a>
+                <a class="btn btn-link" href="{{ '/servicos' }}">Serviços</a>
 
             </div>
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Inscreva-se</h4>
-                <p>Dolor amet sit justo amet elitr clita ipsum elitr est.</p>
+                <p>Saiba mais sobre o nosso trabalho e serviços.</p>
                 <div class="position-relative mx-auto" style="max-width: 400px">
                     <input
                         class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
                         type="text"
-                        placeholder="Your email"
+                        placeholder="Seu email"
                     />
                     <button
                         type="button"
                         class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
                     >
-                        SignUp
+                        Assine
                     </button>
                 </div>
             </div>
