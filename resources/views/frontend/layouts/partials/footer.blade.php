@@ -14,18 +14,16 @@
                     {{  $settings['rodape_descricao'] }}
                 </p>
                 <div class="d-flex pt-2">
-                    <a class="btn btn-square btn-outline-primary me-1" href=""
-                    ><i class="fab fa-twitter"></i
-                        ></a>
-                    <a class="btn btn-square btn-outline-primary me-1" href=""
+                    <a class="btn btn-square btn-outline-primary me-1" href="{{ $settings['facebook'] }}"
                     ><i class="fab fa-facebook-f"></i
                         ></a>
-                    <a class="btn btn-square btn-outline-primary me-1" href=""
-                    ><i class="fab fa-youtube"></i
-                        ></a>
-                    <a class="btn btn-square btn-outline-primary me-0" href=""
+                    <a class="btn btn-square btn-outline-primary me-0" href="{{ $settings['linkedin'] }}"
                     ><i class="fab fa-linkedin-in"></i
                         ></a>
+                    <a class="btn btn-square btn-outline-primary me-1" href="{{ $settings['instagram'] }}"
+                    ><i class="fab fa-instagram"></i
+                        ></a>
+
                 </div>
             </div>
             <div class="col-lg-3 col-md-6">
@@ -71,7 +69,7 @@
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
-                    Designed By <a href="#">BigBits</a>
+                    Designed By <a target="_blank" href="bigbits.com.br">BigBits</a>
                 </div>
             </div>
         </div>

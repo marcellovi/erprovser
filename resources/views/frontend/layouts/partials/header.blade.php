@@ -31,9 +31,6 @@
                 <a class="btn btn-square border-end border-start" href="{{  $settings['facebook'] }}"
                 ><i class="fab fa-facebook-f"></i
                     ></a>
-                <a class="btn btn-square border-end" href="{{  $settings['twitter'] }}"
-                ><i class="fab fa-twitter"></i
-                    ></a>
                 <a class="btn btn-square border-end" href="{{  $settings['linkedin'] }}"
                 ><i class="fab fa-linkedin-in"></i
                     ></a>
