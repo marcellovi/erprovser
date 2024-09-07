@@ -20,7 +20,8 @@ Route::get('/trabalheconosco', function () {
 });
 
 Route::get('/dashboard', function () {
-    return view('dashboard');
+    //return view('dashboard');
+    return view('admin.dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
@@ -32,7 +33,14 @@ Route::middleware('auth')->group(function () {
         return view('admin.dashboard');
     });
 
+    Route::get('/configuracoes', [SettingsController::class, 'edit'])->name('admin.edit');
+    Route::patch('/configuracoes/perfil', [SettingsController::class, 'update'])->name('admin.update');
+    Route::put('/configuracoes/pwd', [SettingsController::class, 'updatepassword'])->name('admin.password');
+    Route::patch('/configuracoes/media', [SettingsController::class, 'updatesocialmedia'])->name('admin.socialmedia');
+    Route::patch('/configuracoes/empresa', [SettingsController::class, 'updateinfoempresa'])->name('admin.infoempresa');
+
     Route::get('/new-settings', [SettingsController::class, 'index'])->name('admin.settings');
+    //Route::patch('/profile', [SettingsController::class, 'update'])->name('admin.update');
 
 });
 

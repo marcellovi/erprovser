@@ -28,7 +28,7 @@
                     </li>
 
                     <li class="nav-item" role="presentation">
-                        <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings-tab-pane" type="button" role="tab" aria-controls="settings-tab-pane" aria-selected="false">Configurações</button>
+                        <button class="nav-link" id="settings-tab" data-bs-toggle="tab" data-bs-target="#settings-tab-pane" type="button" role="tab" aria-controls="settings-tab-pane" aria-selected="false">Info. Empresa</button>
                     </li>
                 </ul>
 
@@ -37,21 +37,15 @@
                     <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                         <h6 class="mb-4">Perfil Usuário</h6>
 
-                        <form class="custom-form profile-form" action="#" method="post" role="form">
-                            <input class="form-control" type="text" name="profile-name" id="profile-name" placeholder="John Doe">
+                        <form class="custom-form profile-form"  action="{{ route('admin.update') }}"  method="post" role="form">
+                            @csrf
+                            @method('patch')
 
-                            <input class="form-control" type="email" name="profile-email" id="profile-email" placeholder="Johndoe@gmail.com">
+                            <input class="form-control" type="text" name="name" id="profile-name" placeholder="Seu Nome" value="{{ $user->name }}">
 
-                            <div class="input-group mb-1">
-                                <img src="images/profile/senior-man-white-sweater-eyeglasses.jpg" class="profile-image img-fluid" alt="">
-
-                                <input type="file" class="form-control" id="inputGroupFile02">
-                            </div>
+                            <input class="form-control" type="email" name="email" id="profile-email" placeholder="seu_email@gmail.com"  value="{{ $user->email  }}">
 
                             <div class="d-flex">
-                                <button type="button" class="form-control me-3">
-                                    Reset
-                                </button>
 
                                 <button type="submit" class="form-control ms-2">
                                     Update
@@ -62,22 +56,32 @@
                     <!-- Password -->
                     <div class="tab-pane fade" id="password-tab-pane" role="tabpanel" aria-labelledby="password-tab" tabindex="0">
                         <h6 class="mb-4">Password</h6>
+                        <form class="custom-form password-form" action="{{ route('admin.password') }}" method="post" role="form">
+                            @csrf
+                            @method('put')
+                            <input type="password" name="current_password" id="update_password_current_password"  class="form-control" placeholder="Current Password" required="">
+                            <x-input-error :messages="$errors->updatePassword->get('current_password')" class="" />
 
-                        <form class="custom-form password-form" action="#" method="post" role="form">
-                            <input type="password" name="password" id="password" pattern="[0-9a-zA-Z]{4,10}" class="form-control" placeholder="Current Password" required="">
+                            <input type="password" name="password" id="update_password_password"  class="form-control" placeholder="New Password" required="">
+                            <small><x-input-error :messages="$errors->updatePassword->get('password')"  /></small>
 
-                            <input type="password" name="confirm_password" id="confirm_password" pattern="[0-9a-zA-Z]{4,10}" class="form-control" placeholder="New Password" required="">
-
-                            <input type="password" name="confirm_password" id="confirm_password" pattern="[0-9a-zA-Z]{4,10}" class="form-control" placeholder="Confirm Password" required="">
+                            <input type="password" name="password_confirmation" id="update_password_password_confirmation"  class="form-control" placeholder="Confirm Password" required="">
+                            <x-input-error :messages="$errors->updatePassword->get('password_confirmation')" class="mt-3" />
 
                             <div class="d-flex">
-                                <button type="button" class="form-control me-3">
-                                    Reset
-                                </button>
 
                                 <button type="submit" class="form-control ms-2">
                                     Update Password
                                 </button>
+                                @if (session('status') === 'password-updated')
+                                    <p
+                                        x-data="{ show: true }"
+                                        x-show="show"
+                                        x-transition
+                                        x-init="setTimeout(() => show = false, 2000)"
+                                        class="text-sm text-gray-600"
+                                    >{{ __('Saved.') }}</p>
+                                @endif
                             </div>
                         </form>
                     </div>
@@ -85,26 +89,27 @@
                     <div class="tab-pane fade" id="socialmedia-tab-pane" role="tabpanel" aria-labelledby="socialmedia-tab" tabindex="0">
                         <h6 class="mb-4">Social Media</h6>
 
-                        <form class="custom-form notification-form" action="#" method="post" role="form">
-
+                        <form class="custom-form notification-form" action="{{ route('admin.socialmedia') }}" method="post" role="form">
+                            @csrf
+                            @method('patch')
                             @foreach($settings as $setting )
 
-                                @if($setting['name'] === 'facebook')
+                                @if($setting['name'] == 'facebook')
                                     <input type="text" name="facebook" id="facebook" class="form-control"
                                            placeholder="facebook" value="{{ $setting->value  }}">
                                 @endif
 
-                                @if($setting['name'] === 'twitter')
+                                @if($setting['name'] == 'twitter')
                                     <input type="text" name="twitter" id="twitter" class="form-control" placeholder="twitter"
                                             value="{{ $setting->value  }}">
                                 @endif
 
-                                @if($setting['name'] === 'linkedin')
+                                @if($setting['name'] == 'linkedin')
                                     <input type="text" name="linkedin" id="linkedin" class="form-control"
                                            placeholder="linkedin" value="{{ $setting->value  }}">
                                 @endif
 
-                                @if($setting['name'] === 'instagram')
+                                @if($setting['name'] == 'instagram')
                                     <input type="text" name="instagram" id="instagram" class="form-control" placeholder="instagram"
                                            value="{{ $setting->value  }}">
                                 @endif
@@ -114,20 +119,23 @@
 
                             <div class="d-flex mt-4">
                                 <button type="submit" class="form-control ms-2">
-                                    Update Password
+                                    Update Social Media
                                 </button>
                             </div>
                         </form>
                     </div>
                     <!-- Settings -->
                     <div class="tab-pane fade" id="settings-tab-pane" role="tabpanel" aria-labelledby="settings-tab" tabindex="0">
-                        <h6 class="mb-4">Configurações</h6>
+                        <h6 class="mb-4">ER ProServ - Info.</h6>
 
-                        <form class="custom-form password-form" action="#" method="post" role="form">
+                        <form class="custom-form password-form" action="{{ route('admin.infoempresa') }}" method="post" role="form">
+                            @csrf
+                            @method('patch')
+
                             @foreach($settings as $setting )
 
                             @if($setting['name'] === 'telefone')
-                                <input type="text" name="telefone" id="telefone" class="form-control" placeholder="telefone" value="{{ $setting->value  }}">
+                                <input type="text" name="telefone" id="telefone" class="form-control" placeholder="telefone" required="true" value="{{ $setting->value  }}">
                             @endif
 
                                 @if($setting['name'] === 'email')
@@ -136,12 +144,9 @@
 
                             @endforeach
                             <div class="d-flex">
-                                <button type="button" class="form-control me-3">
-                                    Reset
-                                </button>
 
                                 <button type="submit" class="form-control ms-2">
-                                    Update Password
+                                    Update Info.
                                 </button>
                             </div>
                         </form>

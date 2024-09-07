@@ -1,6 +1,6 @@
 <header class="navbar sticky-top flex-md-nowrap">
     <div class="col-md-3 col-lg-3 me-0 px-3 fs-6">
-        <a class="navbar-brand" href="{{ asset('/new-admin') }}">
+        <a class="navbar-brand" href="{{ __('/dashboard') }}">
             <i class="bi-box"></i>
             Admin - Dashboard
         </a>
@@ -137,23 +137,16 @@
                     </li>
 
                     <li>
-                        <a class="dropdown-item" href="{{ '/profile' }}">
-                            <i class="bi-person me-2"></i>
-                            Profile
-                        </a>
-                    </li>
-
-                    <li>
-                        <a class="dropdown-item" href="setting.html">
+                        <a class="dropdown-item" href="{{ __('/configuracoes') }}">
                             <i class="bi-gear me-2"></i>
-                            Settings
+                            Perfil & Config.
                         </a>
                     </li>
 
                     <li>
-                        <a class="dropdown-item" href="help-center.html">
+                        <a class="dropdown-item" target="_blank" href="https://wa.me/13376889569">
                             <i class="bi-question-circle me-2"></i>
-                            Help
+                            Ajuda
                         </a>
                     </li>
 

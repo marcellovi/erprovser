@@ -4,10 +4,10 @@
             <li class="nav-item">
                 <a class="nav-link active" aria-current="page" href="{{ '/' }}">
                     <i class="bi-house-fill me-2"></i>
-                    Overview
+                    ER ProServ Site
                 </a>
             </li>
-
+            <!--
             <li class="nav-item">
                 <a class="nav-link" href="{{ '/banner' }}">
                     <i class="bi-wallet me-2"></i>
@@ -20,17 +20,17 @@
                     <i class="bi-person me-2"></i>
                     {{ __('Perfil') }}
                 </a>
-            </li>
+            </li> -->
 
             <li class="nav-item">
-                <a class="nav-link" href="{{ '/admin/configuracoes' }}">
+                <a class="nav-link" href="{{ '/configuracoes' }}">
                     <i class="bi-gear me-2"></i>
                     {{ __('Configurações') }}
                 </a>
             </li>
 
             <li class="nav-item">
-                <a class="nav-link" href="{{ '/admin/servicos' }}">
+                <a class="nav-link" href="#">
                     <i class="bi-server me-2"></i>
                     {{ __('Serviços') }}
                 </a>

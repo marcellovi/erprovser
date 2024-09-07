@@ -8,7 +8,7 @@ use App\Models\Settings;
 class ServiceController extends Controller
 {
     public function index(){
-        $settings = Settings::whereNull('updated_at')->pluck('value','name');
+        $settings = Settings::all()->pluck('value','name');
         return view('services')->with('settings',$settings);
     }
 }

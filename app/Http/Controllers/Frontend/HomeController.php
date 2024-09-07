@@ -8,11 +8,11 @@ use App\Models\Settings;
 class HomeController extends Controller
 {
     public function index(){
-        $settings = Settings::whereNull('updated_at')->pluck('value','name');
+        $settings = Settings::all()->pluck('value','name');
         return view('home')->with('settings',$settings);
     }
     public function contact(){
-        $settings = Settings::whereNull('updated_at')->pluck('value','name');
+        $settings = Settings::all()->pluck('value','name');
         return view('contact')->with('settings',$settings);
     }
 }
