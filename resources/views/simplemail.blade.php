@@ -45,12 +45,11 @@
                 <!-- Body -->
                 <tr>
                     <td class="body" style="padding: 40px; text-align: left; font-size: 16px; line-height: 1.6;">
-                        Nome : {{ $data->name }} <br>
-                        Email : {{ $data->email }}
+                        Nome : {{ $data['name'] }} <br>
+                        Email : {{ $data['email'] }} <br>
+                        Subject : {{ $data['subject'] }}
                         <br><br>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis sint eum nemo animi
-                        velit exercitationem impedit. Incidunt, officia facilis atque? Ipsam voluptas fugiat
-                        distinctio blanditiis veritatis.
+                        Mensagem : {{ $data['message'] }}
                     </td>
                 </tr>
 
@@ -62,9 +61,8 @@
                             <tr>
                                 <td align="center"
                                     style="background-color: #345C72; padding: 10px 20px; border-radius: 5px;">
-                                    <a href="https://www.yourwebsite.com" target="_blank"
-                                       style="color: #ffffff; text-decoration: none; font-weight: bold;">Book a
-                                        Free Consulatation</a>
+                                    <a href="https://www.erproserv.com.br/login" target="_blank"
+                                       style="color: #ffffff; text-decoration: none; font-weight: bold;">Area Administrativa</a>
                                 </td>
                             </tr>
                         </table>
@@ -72,8 +70,7 @@
                 </tr>
                 <tr>
                     <td class="body" style="padding: 40px; text-align: left; font-size: 16px; line-height: 1.6;">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis sint eum nemo animi
-                        velit exercitationem impedit.
+                        Para acessar a area adminstrativa clique no link!
                     </td>
                 </tr>
                 <!-- Footer -->

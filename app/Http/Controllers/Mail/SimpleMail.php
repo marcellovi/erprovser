@@ -15,7 +15,7 @@ class SimpleMail extends Controller
         $data = $request->all();
        // $name = $data['name'];
         Mail::to('marcello.strategy@gmail.com')->send(new SendSimpleMail($data));
-        return view('welcome');
+        return view('contact');
     }
     public function sendMail2(Request $request){
     //dd($request->input('name'));
