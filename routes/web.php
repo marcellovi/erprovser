@@ -4,6 +4,7 @@ use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\ServiceController;
 use App\Http\Controllers\Frontend\SettingsController;
+use App\Http\Controllers\Mail\SimpleMail;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
@@ -13,6 +14,8 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/quemsomos', [AboutController::class, 'index'])->name('about');
 Route::get('/servicos', [ServiceController::class, 'index'])->name('services');
 Route::get('/contato', [HomeController::class, 'contact'])->name('contato');
+
+Route::post('/sendmail', [SimpleMail::class, 'sendmail'])->name('sendmail');
 
 Route::get('/trabalheconosco', function () {
     //return view('default');

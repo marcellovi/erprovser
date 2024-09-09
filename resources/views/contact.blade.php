@@ -90,7 +90,9 @@
                     <p class="mb-4">
                         {{ $settings['pagina_contato_info'] }}
                     </p>
-                    <form>
+                    <form action="{{ route('sendmail') }}" method="post">
+                        @csrf
+                        @method('post')
                         <div class="row g-3">
                             <div class="col-md-6">
                                 <div class="form-floating">
@@ -98,6 +100,7 @@
                                         type="text"
                                         class="form-control border-0 bg-light"
                                         id="name"
+                                        name="name"
                                         placeholder="Your Name"
                                     />
                                     <label for="name">Nome</label>
@@ -109,6 +112,7 @@
                                         type="email"
                                         class="form-control border-0 bg-light"
                                         id="email"
+                                        name="email"
                                         placeholder="Your Email"
                                     />
                                     <label for="email">Email</label>
@@ -120,6 +124,7 @@
                                         type="text"
                                         class="form-control border-0 bg-light"
                                         id="subject"
+                                        name="subject"
                                         placeholder="Subject"
                                     />
                                     <label for="subject">Assunto</label>
@@ -131,6 +136,7 @@
                         class="form-control border-0 bg-light"
                         placeholder="Leave a message here"
                         id="message"
+                        name="message"
                         style="height: 150px"
                     ></textarea>
                                     <label for="message">Mensagem</label>
