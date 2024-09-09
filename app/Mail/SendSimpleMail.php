@@ -13,7 +13,7 @@ class SendSimpleMail extends Mailable
 {
     use Queueable, SerializesModels;
 
-    public $data;
+    public $name;
 
     /**
      * Create a new message instance.
