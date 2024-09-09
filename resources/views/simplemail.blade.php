@@ -38,15 +38,15 @@
                 <tr>
                     <td class="header"
                         style="background-color: #345C72; padding: 40px; text-align: center; color: white; font-size: 24px;">
-                        Responsive Email Template
+                        ER ProServ - Contato
                     </td>
                 </tr>
 
                 <!-- Body -->
                 <tr>
                     <td class="body" style="padding: 40px; text-align: left; font-size: 16px; line-height: 1.6;">
-                        Hello, All! <br>
-                        Lorem odio soluta quae dolores sapiente voluptatibus recusandae aliquam fugit ipsam.
+                        Nome : {{ $request->input('name') }} <br>
+                        Email : {{ $request->input('email') }}
                         <br><br>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis sint eum nemo animi
                         velit exercitationem impedit. Incidunt, officia facilis atque? Ipsam voluptas fugiat

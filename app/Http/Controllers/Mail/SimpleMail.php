@@ -15,16 +15,16 @@ class SimpleMail extends Controller
         $body = 'Test mail';
 
         # EXAMPLE 1) Send the plain text email
-        Mail::raw($body, function ($message) use ($email, $subject) {
-            $message->to($email)
-                ->subject($subject . ' plain text');
-        });
-
-        # EXAMPLE 2) Send the HTML email
-        Mail::html($body, function ($message) use ($email, $subject) {
-            $message->to($email)
-                ->subject($subject . ' html');
-        });
+//        Mail::raw($body, function ($message) use ($email, $subject) {
+//            $message->to($email)
+//                ->subject($subject . ' plain text');
+//        });
+//
+//        # EXAMPLE 2) Send the HTML email
+//        Mail::html($body, function ($message) use ($email, $subject) {
+//            $message->to($email)
+//                ->subject($subject . ' html');
+//        });
 
 
         # EXAMPLE 3) Send the HTML email using a View
