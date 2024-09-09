@@ -10,6 +10,7 @@ class SimpleMail extends Controller
 {
     public function sendMail(Request $request){
     //dd($request->input('name'));
+        $data = $request->all();
         $email = 'marcello.strategy@gmail.com';
         $subject = 'Test mail';
         $body = 'Test mail';
@@ -31,11 +32,9 @@ class SimpleMail extends Controller
 
         $body = view('simplemail')->render();
         try{
-            Mail::html($body, function ($message) use ($email, $subject,$request) {
+            Mail::html($body, function ($message) use ($email, $subject,$data) {
                 $message->to($email)
                     ->subject($subject . ' html from a View');
-                $message->body($request);
-
             });
         }catch (\Exception $e){
             return $e->getMessage();

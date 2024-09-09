@@ -45,8 +45,8 @@
                 <!-- Body -->
                 <tr>
                     <td class="body" style="padding: 40px; text-align: left; font-size: 16px; line-height: 1.6;">
-                        Nome : {{ $request->input('name') }} <br>
-                        Email : {{ $request->input('email') }}
+                        Nome : {{ $data->name }} <br>
+                        Email : {{ $data->email }}
                         <br><br>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam corporis sint eum nemo animi
                         velit exercitationem impedit. Incidunt, officia facilis atque? Ipsam voluptas fugiat
