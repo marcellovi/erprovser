@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Mail;
 
 use App\Http\Controllers\Controller;
 use App\Mail\SendSimpleMail;
+use App\Models\Settings;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
@@ -15,7 +16,9 @@ class SimpleMail extends Controller
         $data = $request->all();
        // $name = $data['name'];
         Mail::to('marcello.strategy@gmail.com')->send(new SendSimpleMail($data));
-        return view('contact');
+
+        $settings = Settings::all()->pluck('value','name');
+        return view('contact')->with('settings',$settings);
     }
     public function sendMail2(Request $request){
     //dd($request->input('name'));
