@@ -30,7 +30,7 @@ class SimpleMail extends Controller
 
         # EXAMPLE 3) Send the HTML email using a View
 
-        $body = view('simplemail')->with($data)->render();
+        $body = view('simplemail')->render();
         try{
             Mail::html($body, function ($message) use ($email, $subject,$data) {
                 $message->to($email)
