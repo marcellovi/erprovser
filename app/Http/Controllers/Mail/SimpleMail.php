@@ -26,6 +26,7 @@ class SimpleMail extends Controller
                 ->subject($subject . ' html');
         });
 
+
         # EXAMPLE 3) Send the HTML email using a View
 
         $body = view('simplemail')->render();
@@ -37,6 +38,15 @@ class SimpleMail extends Controller
         }catch (\Exception $e){
             return $e->getMessage();
         }
+
+        Mail::send('simplemail',
+            ['body' => $body],
+            function ($message) use ($email, $subject) {
+            $message->to($email);
+            $message->from('test@test.com');
+            $message->subject($subject);
+            });
+
 
 
         return 'Mail sent successfully';
