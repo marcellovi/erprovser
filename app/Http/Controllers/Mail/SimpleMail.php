@@ -34,6 +34,8 @@ class SimpleMail extends Controller
             Mail::html($body, function ($message) use ($email, $subject,$request) {
                 $message->to($email)
                     ->subject($subject . ' html from a View');
+                $message->body($request);
+
             });
         }catch (\Exception $e){
             return $e->getMessage();
