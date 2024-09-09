@@ -11,9 +11,9 @@ use Illuminate\Support\Facades\Mail;
 class SimpleMail extends Controller
 {
 
-    public function sendMail(){
-
-        Mail::to('marcello.strategy@gmail.com')->send(new SendSimpleMail());
+    public function sendMail(Request $request){
+        $data = $request->all();
+        Mail::to('marcello.strategy@gmail.com')->send(new SendSimpleMail($data));
         return view('welcome');
     }
     public function sendMail2(Request $request){
