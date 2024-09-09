@@ -3,12 +3,20 @@
 namespace App\Http\Controllers\Mail;
 
 use App\Http\Controllers\Controller;
+use App\Mail\SendSimpleMail;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Mail;
 
+
 class SimpleMail extends Controller
 {
-    public function sendMail(Request $request){
+
+    public function sendMail(){
+
+        Mail::to('marcello.strategy@gmail.com')->send(new SendSimpleMail());
+        return view('welcome');
+    }
+    public function sendMail2(Request $request){
     //dd($request->input('name'));
         $data = $request->all();
         $email = 'marcello.strategy@gmail.com';
