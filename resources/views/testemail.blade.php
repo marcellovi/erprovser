@@ -1,1 +1,1 @@
-Enviado com sucesso! Bem Vindo {{ $name }}
+Enviado com sucesso! Bem Vindo {{ $data['name'] }}
