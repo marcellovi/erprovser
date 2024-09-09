@@ -31,7 +31,7 @@ class SimpleMail extends Controller
 
         $body = view('simplemail')->render();
         try{
-            Mail::html($body, function ($message) use ($email, $subject) {
+            Mail::html($body, function ($message) use ($email, $subject,$request) {
                 $message->to($email)
                     ->subject($subject . ' html from a View');
             });

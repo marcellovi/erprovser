@@ -80,7 +80,7 @@
                 <tr>
                     <td class="footer"
                         style="background-color: #333333; padding: 40px; text-align: center; color: white; font-size: 14px;">
-                        Copyright &copy; 2024 | Your brand name
+                        Copyright &copy; 2024 | ER Pro Serv
                     </td>
                 </tr>
             </table>
