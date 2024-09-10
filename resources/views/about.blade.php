@@ -57,15 +57,10 @@
                         <div class="border-start border-5 border-primary ps-4 mb-5">
                             <h6 class="text-body text-uppercase mb-2">ER ProServ</h6>
                             <h2 class="display-6 mb-0">
-                                Soluções para Residencias, Empresas, Comércios e Industrias
+                                {{ $settings['pagina_quem_somos_titulo'] }}
                             </h2>
                         </div>
-                        <p>
-                            Na ER ProServ, somos mais do que uma empresa de prestação de serviço, manutenção e gestão. Somos parceiros dedicados ao sucesso e à satisfação dos nossos clientes.
-                        </p>
-                        <p class="mb-4">
-                            Com anos de experiência no mercado, nossa equipe de profissionais altamente qualificados, possui um vasto conhecimento em Tecnologia e prestação de serviço, desenvolvendo soluções de gestão com auxilio de tecnologia e expertise.
-                        </p>
+                        {{ $settings['pagina_quem_somos_descricao'] }}
                         <div class="border-top mt-4 pt-4">
                             <div class="row g-4">
                                 <div class="col-sm-4 d-flex wow fadeIn" data-wow-delay="0.1s">

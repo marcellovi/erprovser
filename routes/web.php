@@ -14,6 +14,7 @@ Route::get('/home', [HomeController::class, 'index'])->name('home');
 Route::get('/quemsomos', [AboutController::class, 'index'])->name('about');
 Route::get('/servicos', [ServiceController::class, 'index'])->name('services');
 Route::get('/contato', [HomeController::class, 'contact'])->name('contato');
+Route::get('/thankyou', [HomeController::class, 'thankyou'])->name('thankyou');
 
 Route::post('/sendmail', [SimpleMail::class, 'sendmail'])->name('sendmail');
 

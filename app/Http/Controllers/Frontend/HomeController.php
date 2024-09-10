@@ -15,4 +15,9 @@ class HomeController extends Controller
         $settings = Settings::all()->pluck('value','name');
         return view('contact')->with('settings',$settings);
     }
+
+    public function thankyou(){
+        $settings = Settings::all()->pluck('value','name');
+        return view('thankyou')->with('settings',$settings);
+    }
 }
