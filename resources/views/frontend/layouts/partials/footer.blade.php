@@ -7,9 +7,9 @@
     <div class="container py-5">
         <div class="row g-5">
             <div class="col-lg-3 col-md-6">
-                <h1 class="text-white mb-4">
-                    <i class="fa fa-building text-primary me-3"></i>ProServ
-                </h1>
+                <h2 class="text-white mb-4">
+                    <i class="fa fa-building text-primary me-3"></i>ER ProServ
+                </h2>
                 <p>
                     {{  $settings['rodape_descricao'] }}
                 </p>
@@ -43,21 +43,11 @@
 
             </div>
             <div class="col-lg-3 col-md-6">
-                <h4 class="text-light mb-4">Inscreva-se</h4>
-                <p>Saiba mais sobre o nosso trabalho e serviços.</p>
-                <div class="position-relative mx-auto" style="max-width: 400px">
-                    <input
-                        class="form-control bg-transparent w-100 py-3 ps-4 pe-5"
-                        type="text"
-                        placeholder="Seu email"
-                    />
-                    <button
-                        type="button"
-                        class="btn btn-primary py-2 position-absolute top-0 end-0 mt-2 me-2"
-                    >
-                        Assine
-                    </button>
-                </div>
+                <h4 class="text-light mb-4">Parcerias</h4>
+                <a class="btn btn-link" href="bigbits.com.br">BigBits</a>
+                <!-- <a class="btn btn-link" href="#"></a>
+                <a class="btn btn-link" href="#"></a>
+                <a class="btn btn-link" href="#"></a> -->
             </div>
         </div>
     </div>
@@ -65,7 +55,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                    &copy; <a href="#">ProServ</a>, All Right Reserved.
+                    &copy; <a href="#">ER ProServ</a>, All Right Reserved.
                 </div>
                 <div class="col-md-6 text-center text-md-end">
                     <!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->

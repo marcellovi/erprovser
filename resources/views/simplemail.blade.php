@@ -38,18 +38,26 @@
                 <tr>
                     <td class="header"
                         style="background-color: #345C72; padding: 40px; text-align: center; color: white; font-size: 24px;">
-                        ER ProServ - Contato
+                        ER ProServ - Informativo
                     </td>
                 </tr>
 
                 <!-- Body -->
                 <tr>
                     <td class="body" style="padding: 40px; text-align: left; font-size: 16px; line-height: 1.6;">
+                        <h2>Você recebeu um email solicitando contato!</h2><br><br>
+                        @if(isset($data['email']))
                         Nome : {{ $data['name'] }} <br>
                         Email : {{ $data['email'] }} <br>
                         Subject : {{ $data['subject'] }}
                         <br><br>
                         Mensagem : {{ $data['message'] }}
+                        @endif
+
+                        @if(isset($data['phone']))
+                            <h2>Um novo cadastro foi realizado na página Trabalhe Conosco!</h2>
+                            @endif
+
                     </td>
                 </tr>
 

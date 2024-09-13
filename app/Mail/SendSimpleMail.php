@@ -14,13 +14,18 @@ class SendSimpleMail extends Mailable
     use Queueable, SerializesModels;
 
     public $data;
+    public $subject = 'ER Proserv - Email';
 
     /**
      * Create a new message instance.
      */
-    public function __construct($data)
+    public function __construct($data,$subject)
     {
         $this->data = $data;
+        if(!empty($subject)){
+            $this->subject = $subject;
+        }
+
     }
 
     /**
@@ -29,7 +34,7 @@ class SendSimpleMail extends Mailable
     public function envelope(): Envelope
     {
         return new Envelope(
-            subject: 'Send Simple Mail',
+            subject: $this->subject,
         );
     }
 

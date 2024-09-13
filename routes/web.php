@@ -15,13 +15,15 @@ Route::get('/quemsomos', [AboutController::class, 'index'])->name('about');
 Route::get('/servicos', [ServiceController::class, 'index'])->name('services');
 Route::get('/contato', [HomeController::class, 'contact'])->name('contato');
 Route::get('/thankyou', [HomeController::class, 'thankyou'])->name('thankyou');
+Route::get('/trabalheconosco', [HomeController::class, 'trabalheconosco'])->name('trabalheconosco');
 
 Route::post('/sendmail', [SimpleMail::class, 'sendmail'])->name('sendmail');
+Route::post('/storecareer', [SimpleMail::class, 'storecareer'])->name('storecareer');
 
-Route::get('/trabalheconosco', function () {
-    //return view('default');
-    return view('apply');
-});
+//Route::get('/trabalheconosco', function () {
+//    //return view('default');
+//    return view('apply');
+//});
 
 Route::get('/dashboard', function () {
     //return view('dashboard');

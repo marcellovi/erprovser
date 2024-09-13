@@ -27,8 +27,9 @@
             <a href="{{ URL('/') }}" class="nav-item nav-link <?php echo (sizeof($urlActive) <=3 ) ? 'active' : ''; ?>">Home</a>
             <a href="{{ URL('/quemsomos') }}" class="nav-item nav-link <?php echo (end($urlActive) === 'quemsomos') ? 'active' : ''; ?>">Quem Somos</a>
             <a href="{{ URL('/servicos') }}" class="nav-item nav-link <?php echo (end($urlActive) === 'servicos') ? 'active' : ''; ?>">Serviços</a>
+            <a href="{{ URL('/trabalheconosco') }}" class="nav-item nav-link echo <?php echo (end($urlActive) === 'trabalheconosco') ? 'active' : ''; ?>">Trabalhe Conosco</a>
             <a href="{{ URL('/contato') }}" class="nav-item nav-link <?php echo (end($urlActive) === 'contato') ? 'active' : ''; ?>">Contato</a>
-          <!--  <a href="{{ URL('/trabalheconosco') }}" class="nav-item nav-link echo <?php echo (end($urlActive) === 'trabalheconosco') ? 'active' : ''; ?>">Trabalhe Conosco</a> -->
+
         </div>
     </div>
 </nav>
