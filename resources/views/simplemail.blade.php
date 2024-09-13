@@ -45,8 +45,8 @@
                 <!-- Body -->
                 <tr>
                     <td class="body" style="padding: 40px; text-align: left; font-size: 16px; line-height: 1.6;">
-                        <h2>Você recebeu um email solicitando contato!</h2><br><br>
                         @if(isset($data['email']))
+                            <h2>Você recebeu um email solicitando contato!</h2><br><br>
                         Nome : {{ $data['name'] }} <br>
                         Email : {{ $data['email'] }} <br>
                         Subject : {{ $data['subject'] }}
