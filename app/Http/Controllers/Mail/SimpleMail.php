@@ -15,7 +15,9 @@ class SimpleMail extends Controller
     public function sendMail(Request $request){
         $data = $request->all();
 
-        Mail::to('marcello.strategy@gmail.com')->send(new SendSimpleMail($data,'ER Proserv - Contato'));
+        Mail::to('contato@erproserv.com.br')
+            ->cc('marcello.strategy@gmail.com')
+            ->send(new SendSimpleMail($data,'ER Proserv - Contato'));
 
         $settings = Settings::all()->pluck('value','name');
         return view('thankyou')->with('settings',$settings);
@@ -36,7 +38,9 @@ class SimpleMail extends Controller
 
         $ins = DB::table('careers')->insert($data);
 
-        Mail::to('marcello.strategy@gmail.com')->send(new SendSimpleMail($data,'ER Proserv - Trabalhe Conosco'));
+        Mail::to('contato@erproserv.com.br')
+            ->cc('marcello.strategy@gmail.com')
+            ->send(new SendSimpleMail($data,'ER Proserv - Trabalhe Conosco'));
 
         $settings = Settings::all()->pluck('value','name');
         return view('thankyou')->with('settings',$settings);
