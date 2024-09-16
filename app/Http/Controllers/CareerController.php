@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\DB;
 class CareerController extends Controller
 {
     public function dashboard (){
-        $careers = DB::table('careers')->orderby('created_at', 'desc')->get();
+        $careers = DB::table('careers')->orderby('created_at', 'desc')->paginate(15);
         $settings = DB::table('settings')->get();
         return view('admin.dashboard', ['careers' => $careers], ['settings' => $settings]);
     }

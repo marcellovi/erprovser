@@ -131,8 +131,8 @@
                         </tbody>
                     </table>
                 </div>
-
-                <nav aria-label="Page navigation example">
+                {{ $careers->links() }}
+             <!-- <nav aria-label="Page navigation example">
                     <ul class="pagination justify-content-center mb-0">
                         <li class="page-item">
                             <a class="page-link" href="#" aria-label="Previous">
@@ -162,7 +162,7 @@
                             </a>
                         </li>
                     </ul>
-                </nav>
+                </nav> -->
             </div>
         </div>
         <!-- End New Table -->
