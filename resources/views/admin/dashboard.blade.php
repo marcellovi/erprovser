@@ -37,7 +37,7 @@
 
                         @foreach($careers as $career)
                             <tr>
-                                <td scope="row">{{ $career->created_at }}</td>
+                                <td scope="row">{{ date('Y/m/d',strtotime($career->created_at)) }}</td>
                                 <td scope="row">{{ $career->name }}</td>
                                 <td scope="row">{{ $career->type_service }}</td>
                                 <td scope="row">{{ $career->phone }}</td>

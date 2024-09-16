@@ -48,6 +48,8 @@ Route::middleware('auth')->group(function () {
     Route::patch('/configuracoes/empresa', [SettingsController::class, 'updateinfoempresa'])->name('admin.infoempresa');
 
     Route::get('/new-settings', [SettingsController::class, 'index'])->name('admin.settings');
+
+    Route::get('/vermais/{id}', [CareerController::class, 'show'])->name('admin.details');
     //Route::patch('/profile', [SettingsController::class, 'update'])->name('admin.update');
 
 });

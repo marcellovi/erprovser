@@ -12,4 +12,9 @@ class CareerController extends Controller
         $settings = DB::table('settings')->get();
         return view('admin.dashboard', ['careers' => $careers], ['settings' => $settings]);
     }
+    public function show (Request $request, $id){
+        $career = DB::table('careers')->where('id', $id)->first();
+        $settings = DB::table('settings')->get();
+        return view('admin.details', ['career' => $career], ['settings' => $settings]);
+    }
 }
