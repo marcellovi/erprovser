@@ -84,38 +84,18 @@
 
                             <div class="col-lg-4 col-md-4 col-4">
                                 <a class="dropdown-item text-center" href="#">
-                                    <img src="{{ asset('admin/images/social/spotify.png') }}" class="profile-image img-fluid" alt="">
-                                    <span class="d-block">Spotify</span>
-                                </a>
-                            </div>
-
-                            <div class="col-lg-4 col-md-4 col-4">
-                                <a class="dropdown-item text-center" href="#">
-                                    <img src="{{ asset('admin/images/social/telegram.png') }}" class="profile-image img-fluid" alt="">
-                                    <span class="d-block">Telegram</span>
-                                </a>
-                            </div>
-
-                            <div class="col-lg-4 col-md-4 col-4">
-                                <a class="dropdown-item text-center" href="#">
-                                    <img src="{{ asset('admin/images/social/snapchat.png') }}" class="profile-image img-fluid" alt="">
-                                    <span class="d-block">Snapchat</span>
-                                </a>
-                            </div>
-
-                            <div class="col-lg-4 col-md-4 col-4">
-                                <a class="dropdown-item text-center" href="#">
-                                    <img src="{{ asset('admin/images/social/tiktok.png') }}" class="profile-image img-fluid" alt="">
-                                    <span class="d-block">Tiktok</span>
+                                    <img src="{{ asset('admin/images/social/youtube.png') }}" class="profile-image img-fluid" alt="">
+                                    <span class="d-block">Youtube</span>
                                 </a>
                             </div>
 
                             <div class="col-lg-4 col-md-4 col-4">
                                 <a class="dropdown-item text-center" href="#">
                                     <img src="{{ asset('admin/images/social/youtube.png') }}" class="profile-image img-fluid" alt="">
-                                    <span class="d-block">Youtube</span>
+                                    <span class="d-block">Instagram</span>
                                 </a>
                             </div>
+
                         </div>
                     </div>
                 </div>

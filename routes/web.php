@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\CareerController;
 use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\ServiceController;
@@ -22,13 +23,14 @@ Route::post('/storecareer', [SimpleMail::class, 'storecareer'])->name('storecare
 
 //Route::get('/trabalheconosco', function () {
 //    //return view('default');
-//    return view('apply');
+//    return view('apply');   $careers = DB::table('careers')->get();
 //});
 
-Route::get('/dashboard', function () {
-    //return view('dashboard');
-    return view('admin.dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+Route::get('/dashboard', [CareerController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
+//Route::get('/dashboard', function () {
+//    //return view('dashboard');
+//    return view('admin.dashboard');
+//})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -95,21 +95,27 @@
                             @foreach($settings as $setting )
 
                                 @if($setting['name'] == 'facebook')
+                                    <label class="form-text">Facebook</label>
                                     <input type="text" name="facebook" id="facebook" class="form-control"
                                            placeholder="facebook" value="{{ $setting->value  }}">
                                 @endif
 
+                                <!--
                                 @if($setting['name'] == 'twitter')
+                                        <label class="form-text">Twitter</label>
                                     <input type="text" name="twitter" id="twitter" class="form-control" placeholder="twitter"
                                             value="{{ $setting->value  }}">
                                 @endif
+                                -->
 
                                 @if($setting['name'] == 'linkedin')
+                                        <label class="form-text">LinkedIn</label>
                                     <input type="text" name="linkedin" id="linkedin" class="form-control"
                                            placeholder="linkedin" value="{{ $setting->value  }}">
                                 @endif
 
                                 @if($setting['name'] == 'instagram')
+                                        <label class="form-text">Instagram</label>
                                     <input type="text" name="instagram" id="instagram" class="form-control" placeholder="instagram"
                                            value="{{ $setting->value  }}">
                                 @endif
