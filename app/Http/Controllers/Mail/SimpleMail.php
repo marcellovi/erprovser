@@ -33,7 +33,8 @@ class SimpleMail extends Controller
           'zipcode' => $request->input('zipcode'),
           'state' => $request->input('state'),
           'city' => $request->input('city'),
-          'resume' => $request->input('resume')
+          'resume' => $request->input('resume'),
+            'created_at' => date("Y-m-d")
         ];
 
         $ins = DB::table('careers')->insert($data);
