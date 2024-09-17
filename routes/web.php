@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\CareerController;
+use App\Http\Controllers\Controller;
 use App\Http\Controllers\Frontend\AboutController;
 use App\Http\Controllers\Frontend\HomeController;
 use App\Http\Controllers\Frontend\ServiceController;
@@ -21,16 +22,8 @@ Route::get('/trabalheconosco', [HomeController::class, 'trabalheconosco'])->name
 Route::post('/sendmail', [SimpleMail::class, 'sendmail'])->name('sendmail');
 Route::post('/storecareer', [SimpleMail::class, 'storecareer'])->name('storecareer');
 
-//Route::get('/trabalheconosco', function () {
-//    //return view('default');
-//    return view('apply');   $careers = DB::table('careers')->get();
-//});
 
 Route::get('/dashboard', [CareerController::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
-//Route::get('/dashboard', function () {
-//    //return view('dashboard');
-//    return view('admin.dashboard');
-//})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
@@ -51,6 +44,9 @@ Route::middleware('auth')->group(function () {
 
     Route::get('/vermais/{id}', [CareerController::class, 'show'])->name('admin.details');
     //Route::patch('/profile', [SettingsController::class, 'update'])->name('admin.update');
+
+    //Route::post('/careers/del/{id}', CareerController::class .'destroy')->name('career.destroy');
+
 
 });
 

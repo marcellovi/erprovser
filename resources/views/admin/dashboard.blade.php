@@ -19,7 +19,7 @@
                 <h5 class="mb-4">Profissionais</h5>
 
                 <div class="table-responsive">
-                    <table id="example" class="account-table table">
+                    <table id="data_careers" class="account-table table-striped table-bordered">
                         <thead>
                         <tr>
                             <th scope="col">Data</th>
@@ -28,7 +28,7 @@
                             <th scope="col">Telefone</th>
                             <th scope="col">Estado</th>
                             <th scope="col">+ Detalhes</th>
-                           <!-- <th scope="col">Status</th> -->
+                           <th scope="col">Status</th>
 
                         </tr>
                         </thead>
@@ -45,9 +45,12 @@
                                 <td scope="row">
                                     <a class="nav-link" href="/vermais/{{ $career->id }}">
                                         <i class="bi-eye-fill"></i> Ver +
+                                    </a><!-- /careers/del/{{ $career->id }} -->
+                                    <a class="nav-link" href="#">
+                                        <i class="bi-trash"></i> deletar
                                     </a>
                                 </td>
-                                <!--
+
                                 <td scope="row">
                                     @if($career->active)
                                         <span class="badge text-bg-success">
@@ -57,7 +60,7 @@
                                                         Inativo
                                                     @endif
                                                     </span>
-                                </td> -->
+                                </td>
                             </tr>
                         @endforeach
 

@@ -38,7 +38,7 @@
 
         @include('admin.layouts.partials.navbar')
 
-    <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-9 px-md-4 border-start">
+    <main class="main-wrapper col-md-9 ms-sm-auto py-4 col-lg-10 px-md-4 border-start">
 
         @yield('content')
 
@@ -55,9 +55,15 @@
 <script src="{{ asset('admin/js/apexcharts.min.js') }}"></script>
 <script src="{{ asset('admin/js/custom.js') }}"></script>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 <!-- data table -->
 <script src="https://cdn.datatables.net/2.1.4/js/dataTables.js"></script>
 <script src="https://cdn.datatables.net/2.1.4/js/dataTables.bootstrap5.js"></script>
+<script>
+    new DataTable('#data_careers');
+</script>
 
 
 </body>
