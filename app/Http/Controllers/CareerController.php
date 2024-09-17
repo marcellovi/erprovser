@@ -17,6 +17,12 @@ class CareerController extends Controller
         $settings = DB::table('settings')->get();
         return view('admin.details', ['career' => $career], ['settings' => $settings]);
     }
+    public function destroy ($id){
+        $career = DB::table('careers')->where('id', $id)->delete();
+        $careers = DB::table('careers')->orderby('created_at', 'desc')->paginate(15);
+        $settings = DB::table('settings')->get();
+        return back()->withInput([['$careers' => $careers], ['settings' => $settings]]);
+    }
     public function status (Request $request, $id,$bol){
 
         $career = DB::table('careers')->where('id', $id)->update(['active' => !$bol]);

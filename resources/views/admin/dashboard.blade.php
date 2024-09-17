@@ -46,10 +46,9 @@
                                     <div style="text-align: center;">
                                     <a class="text-black" href="/vermais/{{ $career->id }}">
                                             <i class="bi-eye-fill"></i> ver +
-                                        </a>&nbsp&nbsp&nbsp&nbsp
+                                        </a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
 
-                                        <!-- /careers/del/{{ $career->id }} -->
-                                        <a class="text-black"  href="#">
+                                        <a class="text-black" href="/career/del/{{ $career->id }}">
                                             <i class="bi-trash"></i> del.
                                         </a>
                                     </div>
