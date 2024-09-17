@@ -43,6 +43,8 @@ Route::middleware('auth')->group(function () {
     Route::get('/new-settings', [SettingsController::class, 'index'])->name('admin.settings');
 
     Route::get('/vermais/{id}', [CareerController::class, 'show'])->name('admin.details');
+
+    Route::get('/careers/{id}/{active}', [CareerController::class, 'status'])->name('careers.status');
     //Route::patch('/profile', [SettingsController::class, 'update'])->name('admin.update');
 
     //Route::post('/careers/del/{id}', CareerController::class .'destroy')->name('career.destroy');

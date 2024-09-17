@@ -20,15 +20,15 @@
 
                 <div class="table-responsive">
                     <table id="data_careers" class="account-table table-striped table-bordered">
-                        <thead>
+                        <thead >
                         <tr>
-                            <th scope="col">Data</th>
-                            <th scope="col">Nome</th>
-                            <th scope="col">Area de Atuação</th>
-                            <th scope="col">Telefone</th>
-                            <th scope="col">Estado</th>
-                            <th scope="col">+ Detalhes</th>
-                           <th scope="col">Status</th>
+                            <th scope="col" style="text-align: center">Data</th>
+                            <th scope="col" style="text-align: center">Nome</th>
+                            <th scope="col" style="text-align: center">Area de Atuação</th>
+                            <th scope="col" style="text-align: center">Telefone</th>
+                            <th scope="col" style="text-align: center">Estado</th>
+                            <th scope="col" style="text-align: center">+ Detalhes</th>
+                           <th scope="col" style="text-align: center">Status</th>
 
                         </tr>
                         </thead>
@@ -43,23 +43,32 @@
                                 <td scope="row">{{ $career->phone }}</td>
                                 <td scope="row">{{ $career->state }}</td>
                                 <td scope="row">
-                                    <a class="nav-link" href="/vermais/{{ $career->id }}">
-                                        <i class="bi-eye-fill"></i> Ver +
-                                    </a><!-- /careers/del/{{ $career->id }} -->
-                                    <a class="nav-link" href="#">
-                                        <i class="bi-trash"></i> deletar
-                                    </a>
+                                    <div style="text-align: center;">
+                                    <a class="text-black" href="/vermais/{{ $career->id }}">
+                                            <i class="bi-eye-fill"></i> ver +
+                                        </a>&nbsp&nbsp&nbsp&nbsp
+
+                                        <!-- /careers/del/{{ $career->id }} -->
+                                        <a class="text-black"  href="#">
+                                            <i class="bi-trash"></i> del.
+                                        </a>
+                                    </div>
+
                                 </td>
 
                                 <td scope="row">
+                                    <div style="text-align: center;">
                                     @if($career->active)
+                                        <a class="nav-link" href="/careers/{{ $career->id }}/{{ $career->active }}" title="Clique para Inativar Profissional" >
                                         <span class="badge text-bg-success">
                                                         Ativo
                                             @else
+                                                <a class="nav-link" href="/careers/{{ $career->id }}/{{ $career->active }}" title="Clique para Ativar Profissional">
                                                 <span class="badge text-bg-danger">
                                                         Inativo
                                                     @endif
-                                                    </span>
+                                                </span></a>
+                                        </div>
                                 </td>
                             </tr>
                         @endforeach
