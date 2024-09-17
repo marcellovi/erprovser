@@ -106,19 +106,34 @@
                                         id="name"
                                         name="name"
                                         placeholder="Nome"
+                                        required
                                     />
                                     <label for="name">Nome</label>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-floating">
+                                    <select  class="form-control border-0 bg-light" id="type_service" name="type_service" required>
+                                        <option value="">Escolha uma Opção</option>
+                                        <option value="Eletricista">Eletricista</option>
+                                        <option value="Mecanico">Mecanico</option>
+                                        <option value="Tec. Refrigereção">Tec. Refrigereção</option>
+                                        <option value="Limpeza / Jardinagem">Limpeza / Jardinagem</option>
+                                        <option value="Jardinagem">Jardinagem</option>
+                                        <option value="Limpeza">Limpeza</option>
+                                        <option value="Copeiro">Copeiro</option>
+                                        <option value="Analista de Sistema">Analista de Sistema</option>
+                                        <option value="Desenv. Software">Desenv. Software</option>
+                                        <option value="Outros">Outros</option>
+                                    </select>
+                                    <!--
                                     <input
                                         type="text"
                                         class="form-control border-0 bg-light"
                                         id="type_service"
                                         name="type_service"
                                         placeholder="Especialização"
-                                    />
+                                    /> -->
                                     <label for="type_service">Especialização</label>
                                 </div>
                             </div>
@@ -142,6 +157,7 @@
                                         id="phone"
                                         name="phone"
                                         placeholder="Telefone"
+                                        required
                                     />
                                     <label for="phone">Telefone</label>
                                 </div>
@@ -166,6 +182,7 @@
                                         id="state"
                                         name="state"
                                         placeholder="Estado"
+                                        required
                                     />
                                     <label for="state">Estado</label>
                                 </div>
@@ -178,6 +195,7 @@
                                         id="city"
                                         name="city"
                                         placeholder="Município"
+                                        required
                                     />
                                     <label for="city">Município</label>
                                 </div>
@@ -190,6 +208,7 @@
                         id="resume"
                         name="resume"
                         style="height: 150px"
+                        required
                     ></textarea>
                                     <label for="resume">Resumo Profissional</label>
                                 </div>
