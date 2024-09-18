@@ -131,7 +131,7 @@
                                         <option value="Técnico em Eletrotécnica">Técnico em Eletrotécnica</option>
                                         <option value="Técnico em Automação">Técnico em Automação</option>
                                         <option value="Arquiteto">Arquiteto</option>
-                                        <option value="Atífice de Manutenção">Atífice de Manutenção</option>
+                                        <option value="Artífice de Manutenção">Artífice de Manutenção</option>
                                         <option value="Supervisor de Manutenção">Supervisor de Manutenção</option>
                                         <option value="Supervisor de Limpeza">Supervisor de Limpeza</option>
                                         <option value="Supervisor de Jardinagem">Supervisor de Jardinagem</option>
