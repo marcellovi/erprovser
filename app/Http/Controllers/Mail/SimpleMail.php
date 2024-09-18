@@ -39,9 +39,9 @@ class SimpleMail extends Controller
 
         $ins = DB::table('careers')->insert($data);
 
-        Mail::to('contato@erproserv.com.br')
-            ->cc('marcello.strategy@gmail.com')
-            ->send(new SendSimpleMail($data,'ER Proserv - Trabalhe Conosco'));
+//        Mail::to('contato@erproserv.com.br')
+//            ->cc('marcello.strategy@gmail.com')
+//            ->send(new SendSimpleMail($data,'ER Proserv - Trabalhe Conosco'));
 
         $settings = Settings::all()->pluck('value','name');
         return view('thankyou')->with('settings',$settings);
