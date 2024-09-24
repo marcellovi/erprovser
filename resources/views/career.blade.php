@@ -114,8 +114,12 @@
                             <div class="col-md-6">
                                 <div class="form-floating">
                                     <select  class="form-control border-0 bg-light" id="type_service" name="type_service" required>
-                                        <option value="">Escolha uma Opção</option>
-                                        <option value="Engenheiro Mecânico">Engenheiro Mecânico</option>
+                                        <option value="" selected>Escolha uma Opção</option>
+                                        @foreach($careers as $career)
+                                        <option value="{{ $career->name }}>{{ $career->name }}</option>
+                                        @endforeach
+                                    </select>
+                                        <!-- <option value="Engenheiro Mecânico">Engenheiro Mecânico</option>
                                         <option value="Engenheiro Elétrico">Engenheiro Elétrico</option>
                                         <option value="Engenheiro Civil">Engenheiro Civil</option>
                                         <option value="Engenheiro Automação">Engenheiro Automação</option>
@@ -167,8 +171,8 @@
                                         <option value="Engenheiro de Meio Ambiente">Engenheiro de Meio Ambiente</option>
                                         <option value="Técnico em CFTV">Técnico em CFTV</option>
                                         <option value="Manutenção Predial">Manutenção Predial</option>
-                                        <option value="Outros">Outros</option>
-                                    </select>
+                                        <option value="Outros">Outros</option> -->
+
                                     <!--
                                     <input
                                         type="text"

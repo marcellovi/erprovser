@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Settings;
+use Illuminate\Support\Facades\DB;
 
 class HomeController extends Controller
 {
@@ -17,7 +18,8 @@ class HomeController extends Controller
     }
     public function trabalheconosco(){
         $settings = Settings::all()->pluck('value','name');
-        return view('career')->with('settings',$settings);
+        $careers = DB::table('type_services')->orderBy('name')->get();
+        return view('career')->with(compact('careers','settings'));
     }
 
     public function thankyou(){
