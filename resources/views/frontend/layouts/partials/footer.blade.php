@@ -45,6 +45,8 @@
             <div class="col-lg-3 col-md-6">
                 <h4 class="text-light mb-4">Parcerias</h4>
                 <a class="btn btn-link" href="bigbits.com.br">BigBits</a>
+                <a class="btn btn-link" href="#">Manutenção Predial</a>
+
                 <!-- <a class="btn btn-link" href="#"></a>
                 <a class="btn btn-link" href="#"></a>
                 <a class="btn btn-link" href="#"></a> -->
