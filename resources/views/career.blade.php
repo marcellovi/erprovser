@@ -166,6 +166,7 @@
                                         <option value="Técnico de Meio Ambiente">Técnico de Meio Ambiente</option>
                                         <option value="Engenheiro de Meio Ambiente">Engenheiro de Meio Ambiente</option>
                                         <option value="Técnico em CFTV">Técnico em CFTV</option>
+                                        <option value="Manutenção Predial">Manutenção Predial</option>
                                         <option value="Outros">Outros</option>
                                     </select>
                                     <!--
