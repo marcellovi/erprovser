@@ -18,7 +18,8 @@ class HomeController extends Controller
     }
     public function trabalheconosco(){
         $settings = Settings::all()->pluck('value','name');
-        $careers = DB::table('type_services')->orderBy('name')->get();
+        $careers = DB::table('type_services')->select('name')->orderBy('name')->get();
+
         return view('career')->with(compact('careers','settings'));
     }
 
