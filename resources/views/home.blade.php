@@ -178,18 +178,18 @@ Identificação e reporte dos riscos em termos de segurança associados à m
                             alt=""
                             style="object-fit: cover"
                         />
-                        <div
-                            class="position-absolute top-0 start-0 bg-white pe-3 pb-3"
-                            style="width: 200px; height: 200px"
-                        >
-                            <div
-                                class="d-flex flex-column justify-content-center text-center bg-primary h-100 p-3"
-                            >
-                                <h1 class="text-white">25</h1>
-                                <h2 class="text-white">Anos</h2>
-                                <h5 class="text-white mb-0">de Experiência</h5>
-                            </div>
-                        </div>
+{{--                        <div--}}
+{{--                            class="position-absolute top-0 start-0 bg-white pe-3 pb-3"--}}
+{{--                            style="width: 200px; height: 200px"--}}
+{{--                        >--}}
+{{--                            <div--}}
+{{--                                class="d-flex flex-column justify-content-center text-center bg-primary h-100 p-3"--}}
+{{--                            >--}}
+{{--                                <h1 class="text-white">25</h1>--}}
+{{--                                <h2 class="text-white">Anos</h2>--}}
+{{--                                <h5 class="text-white mb-0">de Experiência</h5>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
                     </div>
                 </div>
             </div>
