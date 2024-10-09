@@ -148,7 +148,7 @@
                 <div class="triangle"></div>
             </li>
             <li class="nav-item">
-                <a class="nav-item-hold" href="#">
+                <a class="nav-item-hold" href="ativos.php">
                     <i class="nav-icon i-Financial"></i>
                     <span class="nav-text">ATIVOS</span>
                 </a>
