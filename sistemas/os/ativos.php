@@ -47,57 +47,57 @@
             <div class="separator-breadcrumb border-top"></div>
 
 
-            <div class="row">
-                <!-- ICON BG -->
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
-                        <div class="card-body text-center">
-                            <i class="i-File-Clipboard-File--Text"></i>
-                            <div class="content">
-                                <p class="text-muted mt-2 mb-0">ATIVOS</p>
-                                <p class="text-primary text-24 line-height-1 mb-2">200</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
-                        <div class="card-body text-center">
-                            <i class="i-Financial"></i>
-                            <div class="content">
-                                <p class="text-muted mt-2 mb-0">INATIVOS</p>
-                                <p class="text-primary text-24 line-height-1 mb-2">10</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
-                        <div class="card-body text-center">
-                            <i class="i-Checkout-Basket"></i>
-                            <div class="content">
-                                <p class="text-muted mt-2 mb-0">FERIAS</p>
-                                <p class="text-primary text-24 line-height-1 mb-2">80</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6 col-sm-6">
-                    <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">
-                        <div class="card-body text-center">
-                            <i class="i-Money-2"></i>
-                            <div class="content">
-                                <p class="text-muted mt-2 mb-0">TOTAL</p>
-                                <p class="text-primary text-24 line-height-1 mb-2">220</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
+<!--            <div class="row">-->
+<!--                <!-- ICON BG -->
+<!--                <div class="col-lg-3 col-md-6 col-sm-6">-->
+<!--                    <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">-->
+<!--                        <div class="card-body text-center">-->
+<!--                            <i class="i-File-Clipboard-File--Text"></i>-->
+<!--                            <div class="content">-->
+<!--                                <p class="text-muted mt-2 mb-0">ATIVOS</p>-->
+<!--                                <p class="text-primary text-24 line-height-1 mb-2">200</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--                <div class="col-lg-3 col-md-6 col-sm-6">-->
+<!--                    <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">-->
+<!--                        <div class="card-body text-center">-->
+<!--                            <i class="i-Financial"></i>-->
+<!--                            <div class="content">-->
+<!--                                <p class="text-muted mt-2 mb-0">INATIVOS</p>-->
+<!--                                <p class="text-primary text-24 line-height-1 mb-2">10</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--                <div class="col-lg-3 col-md-6 col-sm-6">-->
+<!--                    <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">-->
+<!--                        <div class="card-body text-center">-->
+<!--                            <i class="i-Checkout-Basket"></i>-->
+<!--                            <div class="content">-->
+<!--                                <p class="text-muted mt-2 mb-0">FERIAS</p>-->
+<!--                                <p class="text-primary text-24 line-height-1 mb-2">80</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--                <div class="col-lg-3 col-md-6 col-sm-6">-->
+<!--                    <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">-->
+<!--                        <div class="card-body text-center">-->
+<!--                            <i class="i-Money-2"></i>-->
+<!--                            <div class="content">-->
+<!--                                <p class="text-muted mt-2 mb-0">TOTAL</p>-->
+<!--                                <p class="text-primary text-24 line-height-1 mb-2">220</p>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+<!---->
+<!--            </div>-->
 
             <div class="row">
 
