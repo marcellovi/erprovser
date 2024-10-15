@@ -181,7 +181,7 @@
                                 </div>
 
                                 <div class="mb-3 col-md-3">
-                                    <p class="font-weight-400 mb-2">Loc. Sala/Área *</p>
+                                    <p class="font-weight-400 mb-2">Fase *</p>
                                     <select id="theme_selector" class="form-control">
                                         <option value="Nenhum" >---Nenhum---</option>
                                         <option value="Tipo 1" selected>FS01</option>
