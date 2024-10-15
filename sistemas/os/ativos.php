@@ -48,7 +48,7 @@
 
 
 <!--            <div class="row">-->
-<!--                <!-- ICON BG -->
+<!--                <-- ICON BG -->
 <!--                <div class="col-lg-3 col-md-6 col-sm-6">-->
 <!--                    <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4">-->
 <!--                        <div class="card-body text-center">-->
@@ -110,25 +110,38 @@
                         <div class="card-body">
 
                             <div class="row">
+                                <div class="mb-3 col-md-12">
+                                    <p class="font-weight-400 mb-2">Tags</p>
+                                    <input type="text" id="tags"  class="form-control" disabled  value="FS01-BL03-AND02-SL03-AC01">
+<!--                                    <input type="text" id="tags"  class="form-control" data-role="tagsinput"  value="TAG-0001">-->
+                                </div>
+
                                 <div class="mb-3 col-md-6">
-                                    <p class="font-weight-400 mb-2">Nome do Ativo</p><input type="text" placeholder="Nome" class="form-control">
+                                    <p class="font-weight-400 mb-2">Nome do Ativo *</p>
+                                    <select id="theme_selector" class="form-control">
+                                        <option value="" >---Selecione---</option>
+                                        <option value="Mobiliario" selected>AC01</option>
+                                        <option value="Eq.Eletronico">AB01</option>
+                                        <option value="Eq.Eletronico">CD02</option>
+                                        <option value="Eq.Eletronico">SP01</option>
+                                    </select>
+<!--                                    <input type="text" placeholder="Nome" class="form-control">-->
                                 </div>
                                 <div class="mb-3 col-md-6">
                                     <p class="font-weight-400 mb-2">Categoria</p>
                                     <select id="theme_selector" class="form-control">
-                                        <option value="" selected>---Selecione---</option>
-                                        <option value="Mobiliario">Mobiliário</option>
+                                        <option value="" >---Selecione---</option>
+                                        <option value="Mobiliario" selected>Refrigeração</option>
                                         <option value="Eq.Eletronico">Eq. Eletronico</option>
+                                        <option value="Eq.Eletronico">Mobiliário</option>
                                     </select>
                                 </div>
-                                <div class="mb-3 col-md-12">
-                                    <p class="font-weight-400 mb-2">Tags</p><input type="text" id="tags"  class="form-control" data-role="tagsinput"  value="TAG-0001">
-                                </div>
+
                                 <div class="col-md-6">
-                                    <p class="font-weight-400 mb-2">Modelo</p><input type="text" placeholder="Modelo" class="form-control">
+                                    <p class="font-weight-400 mb-2">Modelo</p><input type="text" placeholder="Modelo" class="form-control" value="Consul">
                                 </div>
                               <div class="mb-3 col-md-6">
-                                   <p class="font-weight-400 mb-2">N. Série</p><input type="text" placeholder="N. Série" class="form-control">
+                                   <p class="font-weight-400 mb-2">N. Série</p><input type="text" placeholder="N. Série" class="form-control" value="NS896543-88776">
                                </div>
 
 <!--                                <div class="form-group">-->
@@ -138,30 +151,42 @@
 <!--                                </div>-->
 
 
-                                <div class="mb-3 col-md-4">
-                                    <p class="font-weight-400 mb-2">Loc. Bloco</p>
+                                <div class="mb-3 col-md-3">
+                                    <p class="font-weight-400 mb-2">Loc. Bloco *</p>
                                     <select id="theme_selector" class="form-control">
-                                        <option value="Nenhum" selected>---Nenhum---</option>
-                                        <option value="Tipo 1">Bl. 1</option>
-                                        <option value="Tipo 2">Bl. 2</option>
+                                        <option value="Nenhum" >---Nenhum---</option>
+                                        <option value="Tipo 1">BL01</option>
+                                        <option value="Tipo 2">BL02</option>
+                                        <option value="Tipo 2" selected>BL03</option>
+                                        <option value="Tipo 2">BL04</option>
                                     </select>
                                 </div>
-                                <div class="mb-3 col-md-4">
-                                    <p class="font-weight-400 mb-2">Loc. Andar</p>
+                                <div class="mb-3 col-md-3">
+                                    <p class="font-weight-400 mb-2">Loc. Andar *</p>
                                     <select id="theme_selector" class="form-control">
-                                        <option value="Nenhum" selected>---Nenhum---</option>
-                                        <option value="Tipo 1">Terreo</option>
-                                        <option value="Tipo 2">Segundo Andar</option>
-                                        <option value="Tipo 2">Terceiro Andar</option>
+                                        <option value="Nenhum" >---Nenhum---</option>
+                                        <option value="Tipo 1">AND01</option>
+                                        <option value="Tipo 2" selected>AND02</option>
+                                        <option value="Tipo 2">AND03</option>
                                     </select>
                                 </div>
-                                <div class="mb-3 col-md-4">
-                                    <p class="font-weight-400 mb-2">Loc. Sala/Área</p>
+                                <div class="mb-3 col-md-3">
+                                    <p class="font-weight-400 mb-2">Loc. Sala/Área *</p>
                                     <select id="theme_selector" class="form-control">
-                                        <option value="Nenhum" selected>---Nenhum---</option>
-                                        <option value="Tipo 1">Sala</option>
-                                        <option value="Tipo 2">Banheiro</option>
-                                        <option value="Tipo 2">Quarto</option>
+                                        <option value="Nenhum" >---Nenhum---</option>
+                                        <option value="Tipo 1">SL01</option>
+                                        <option value="Tipo 2">SL02</option>
+                                        <option value="Tipo 2" selected>SL03</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-3 col-md-3">
+                                    <p class="font-weight-400 mb-2">Loc. Sala/Área *</p>
+                                    <select id="theme_selector" class="form-control">
+                                        <option value="Nenhum" >---Nenhum---</option>
+                                        <option value="Tipo 1" selected>FS01</option>
+                                        <option value="Tipo 2">FS02</option>
+                                        <option value="Tipo 2">FS03</option>
                                     </select>
                                 </div>
 
@@ -178,7 +203,7 @@
                                     </div>
                                 </div>
                                 <div class="mb-3 col-md-12">
-                                    <p class="font-weight-400 mb-2">Observações:</p><textarea rows="3" class="form-control"></textarea>
+                                    <p class="font-weight-400 mb-2">Descritivo:</p><textarea rows="3" class="form-control">Ar Condicionado comprado para substituir Ar modelo XYZ</textarea>
                                 </div>
 
                             </div>
@@ -283,10 +308,10 @@
                                     <thead>
                                         <tr>
                                             <th scope="col">AÇÕES</th>
-                                            <th scope="col">NOME</th>
+                                            <th scope="col">ATIVO</th>
+                                            <th scope="col">RESPONSAVEL</th>
                                             <th scope="col">CATEGORIA</th>
-                                            <th scope="col">MODELO</th>
-                                            <th scope="col">BL/ANDAR/AREA</th>
+                                            <th scope="col">DT. CRIAÇÃO</th>
                                             <th scope="col">STATUS</th>
                                         </tr>
                                     </thead>
@@ -300,12 +325,12 @@
                                                     <i class="nav-icon i-Close-Window font-weight-bold"></i>
                                                 </a>
                                             </td>
-                                            <td>Ricardo</td>
+                                            <td>FS01-BL03-AND02-SL03-AC01</td>
                                             <td>
-                                                Masculino
+                                                Emerson
                                             </td>
 
-                                            <td>RJ/RJ</td>
+                                            <td>Eq. Eletronico</td>
                                             <td>
                                                 24/09/2024
                                             </td>
@@ -320,12 +345,12 @@
                                                     <i class="nav-icon i-Close-Window font-weight-bold"></i>
                                                 </a>
                                             </td>
-                                            <td>Joana</td>
+                                            <td>FS04-BL02-AND02-SL01-AC01</td>
                                             <td>
-                                                Feminino
+                                                João
                                             </td>
 
-                                            <td>RJ/RJ</td>
+                                            <td>Mobiliario</td>
                                             <td>
                                                 24/09/2024
                                             </td>
@@ -340,12 +365,12 @@
                                                     <i class="nav-icon i-Close-Window font-weight-bold"></i>
                                                 </a>
                                             </td>
-                                            <td>Marcello</td>
+                                            <td>FS00-BL03-AND02-SL02-AC03</td>
                                             <td>
-                                                Masculino
+                                                Marcello
                                             </td>
 
-                                            <td>RJ/RJ</td>
+                                            <td>Refrigeração</td>
                                             <td>
                                                 01/07/2000
                                             </td>
@@ -360,12 +385,12 @@
                                                     <i class="nav-icon i-Close-Window font-weight-bold"></i>
                                                 </a>
                                             </td>
-                                            <td>Emerson</td>
+                                            <td>FS05-BL07-AND01-SL01-AC01</td>
                                             <td>
-                                                Masculino
+                                                Ricardo
                                             </td>
 
-                                            <td>RJ/RJ</td>
+                                            <td>Eq. Eletronico</td>
                                             <td>
                                                 24/01/2014
                                             </td>
@@ -380,12 +405,12 @@
                                                     <i class="nav-icon i-Close-Window font-weight-bold"></i>
                                                 </a>
                                             </td>
-                                            <td>Maria</td>
+                                            <td>FS01-BL02-AND02-SL03-AC02</td>
                                             <td>
-                                                Feminino
+                                                Maria
                                             </td>
 
-                                            <td>SP/SP</td>
+                                            <td>Refrigeração</td>
                                             <td>
                                                 05/09/2024
                                             </td>
