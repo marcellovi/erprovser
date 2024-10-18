@@ -1,3 +1,9 @@
+<?php
+    $url = $_SERVER['REQUEST_URI'];
+    $url = str_replace(['/','.php'], '', $url);
+    echo $url;
+    ?>
+
 
 <div class="main-header">
     <div class="logo">
@@ -119,14 +125,22 @@
 <div class="side-content-wrap">
     <div class="sidebar-left open rtl-ps-none" data-perfect-scrollbar data-suppress-scroll-x="true">
         <ul class="navigation-left">
+           <?php  if (str_contains($url, 'index') || empty($url)) { ?>
+            <li class="nav-item active">
+                <?php } else { ?>
             <li class="nav-item">
+                <?php } ?>
                 <a class="nav-item-hold" href="../../index.php">
                     <i class="nav-icon i-Bar-Chart"></i>
                     <span class="nav-text">DASHBOARD</span>
                 </a>
                 <div class="triangle"></div>
             </li>
-            <li class="nav-item" >
+            <?php  if (str_contains($url, 'gestao')) { ?>
+            <li class="nav-item active">
+                <?php } else { ?>
+            <li class="nav-item">
+                <?php } ?>
                 <a class="nav-item-hold" href="../../gestaos.php">
                     <i class="nav-icon i-Conference"></i>
                     <span class="nav-text">GESTÃO OS</span>
@@ -140,21 +154,33 @@
                 </a>
                 <div class="triangle"></div>
             </li>
-            <li class="nav-item" >
+            <?php  if (str_contains($url, 'relatorios')) { ?>
+            <li class="nav-item active">
+                <?php } else { ?>
+            <li class="nav-item">
+                <?php } ?>
                 <a class="nav-item-hold" href="../../relatorios.php">
                     <i class="nav-icon i-Folder-With-Document"></i>
                     <span class="nav-text">RELATÓRIOS</span>
                 </a>
                 <div class="triangle"></div>
             </li>
+            <?php  if (str_contains($url, 'ativos')) { ?>
+            <li class="nav-item active">
+                <?php } else { ?>
             <li class="nav-item">
+                <?php } ?>
                 <a class="nav-item-hold" href="ativos.php">
                     <i class="nav-icon i-Financial"></i>
                     <span class="nav-text">ATIVOS</span>
                 </a>
                 <div class="triangle"></div>
             </li>
-            <li class="nav-item" >
+            <?php  if (str_contains($url, 'equipe')) { ?>
+            <li class="nav-item active">
+                <?php } else { ?>
+            <li class="nav-item">
+                <?php } ?>
                 <a class="nav-item-hold" href="../../equipe.php">
                     <i class="nav-icon i-Business-Mens"></i>
                     <span class="nav-text">EQUIPE</span>
@@ -162,7 +188,11 @@
                 <div class="triangle"></div>
             </li>
 
-            <li class="nav-item" >
+            <?php  if (str_contains($url, 'compras')) { ?>
+            <li class="nav-item active">
+                <?php } else { ?>
+            <li class="nav-item">
+                <?php } ?>
                 <a class="nav-item-hold" href="../../compras.php">
                     <i class="nav-icon i-Add-Cart"></i>
                     <span class="nav-text">COMPRAS</span>
