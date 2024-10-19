@@ -1,7 +1,6 @@
 <?php
     $url = $_SERVER['REQUEST_URI'];
     $url = str_replace(['/','.php'], '', $url);
-    echo $url;
     ?>
 
 
